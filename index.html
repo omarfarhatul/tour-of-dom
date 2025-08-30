@@ -11,7 +11,7 @@
         <h1>Welcome to my DOM</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore odit, et, porro officia sint exercitationem impedit reiciendis molestiae nulla libero cum fuga suscipit laborum enim ducimus optio facere placeat cupiditate.</p>
     </header>
-    <main>
+    <main id="main-container">
         <section>
             <h1>Hello! Everyone how are you?</h1>
             <ul>
@@ -32,7 +32,7 @@
 
         <section id="places-container" class="large-text">
             <h1>Pleases I like to visit</h1>
-            <ul>
+            <ul id="places-list">
                 <li class="important-places">Sundarban</li>
                 <li class="important-places">Jhorna</li>
                 <li class="important-places">Somudro Saikat</li>
@@ -41,6 +41,7 @@
     </main>
     <script src="dom-js/dom.js"></script>
     <script src="dom-js/stylein.js"></script>
+    <script src="dom-js/append.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
