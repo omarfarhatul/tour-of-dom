@@ -47,20 +47,24 @@
             // console.log(li.innerText);
         }
 
-        const liHeadings = document.getElementsByTagName('h1');
-        for(const h1 of liHeadings){
+        // option-1: getElementsByTagName
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
             // console.log(h1.innerText);
         }
 
-        const fruitsTitle = document.getElementById('h1');
+        // option-2: getElementById
+        const fruitsTitle = document.getElementById('fruits-title');
         fruitsTitle.innerText ='Fruits changed by JS';
 
+        // option-3: getElementsByClassName
         const places = document.getElementsByClassName('important-places');
         for(const place of places){
             console.log(place.innerText);
         }
 
-        // querySelectorAll
+        // option-4: querySelector
+        // option-5: querySelectorAll
         const someli= document.querySelectorAll('.fruits-container li');
         // console.log(someli);
         for(const li of someli){
