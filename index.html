@@ -28,9 +28,9 @@
                 <li>Banana</li>
                 <li>JackFruit</li>
             </ul>
-        </section>
+        </section> 
 
-        <section>
+        <section id="places-container">
             <h1>Pleases I like to visit</h1>
             <ul>
                 <li class="important-places">Sundarban</li>
@@ -40,6 +40,7 @@
         </section>
     </main>
     <script src="dom-js/dom.js"></script>
+    <script src="dom-js/stylein.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
@@ -60,7 +61,7 @@
         // option-3: getElementsByClassName
         const places = document.getElementsByClassName('important-places');
         for(const place of places){
-            console.log(place.innerText);
+            // console.log(place.innerText);
         }
 
         // option-4: querySelector
@@ -68,7 +69,7 @@
         const someli= document.querySelectorAll('.fruits-container li');
         // console.log(someli);
         for(const li of someli){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
 </body>
