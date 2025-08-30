@@ -21,7 +21,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="fruits-container">
             <h1 id="fruits-title">Fruits I like</h1>
             <ul>
                 <li>Apple</li>
@@ -58,6 +58,13 @@
         const places = document.getElementsByClassName('important-places');
         for(const place of places){
             console.log(place.innerText);
+        }
+
+        // querySelectorAll
+        const someli= document.querySelectorAll('.fruits-container li');
+        // console.log(someli);
+        for(const li of someli){
+            console.log(li.innerText);
         }
     </script>
 </body>
